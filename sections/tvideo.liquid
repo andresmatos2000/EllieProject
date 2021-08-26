@@ -1,49 +1,30 @@
+<!-- Welcome section starts -->
+<section class="welcome">
+    <div class="container">
+    <div class="welcome-outter">
+    <h2 class="section-heading">Heading 1</h2>
+    <h1 class="section-large-heading">Heading 2</h1>
+    <p class="discription">Lorem ipsum is placeholder text commonly used...</p>
+    </div>
+    <div class="col-xs-12 col-md-12 text-center"><button class="view-btn"><a href="">read more</a></button></div>
+    </div>
+    </section>
+    <!-- Welcome section ends -->
 {% schema %}
 {
-  "name": "t:sections.tvideo.name",
-  "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "name": "Call to Actions",
+  "class": "index-section index-section--flush",
   "settings": [
     {
+      "id": "cta_1_title",
       "type": "text",
-      "id": "heading",
-      "default": "Video",
-      "label": "t:sections.tvideo.settings.heading.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "cover_image",
-      "label": "t:sections.tvideo.settings.cover_image.label"
-    },
-    {
-      "type": "video_url",
-      "id": "video_url",
-      "accept": [
-        "youtube",
-        "vimeo"
-      ],
-      "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-      "label": "t:sections.video.settings.video_url.label",
-      "placeholder": "t:sections.video.settings.video_url.placeholder",
-      "info": "t:sections.video.settings.video_url.info"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "t:sections.video.settings.description.label",
-      "info": "t:sections.video.settings.description.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "t:sections.video.settings.full_width.label",
-      "default": false
+      "label": "CTA 1 Title",
+      "default": "Dryups Specials"
     }
   ],
-  "presets": [
-    {
-      "name": "t:sections.video.presets.name"
-    }
-  ]
+  "presets": [{
+    "name": "Call to Actions",
+    "category": "Text"
+  }]
 }
-  {% endschema %}
+{% endschema %}
