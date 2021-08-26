@@ -13,7 +13,7 @@
 {% schema %}
 {
   "name": "Call to Actions",
-  "class": "index-section index-section--flush",
+  "class": "t",
   "settings": [
     {
       "id": "cta_1_title",
@@ -22,6 +22,19 @@
       "default": "Dryups Specials"
     }
   ],
+	"blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ],
   "presets": [{
     "name": "Call to Actions",
     "category": "Text"
